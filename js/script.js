@@ -26,12 +26,15 @@ function consoleText(line, id, color) {
         x = 1;
         letterCount += x;
         waiting = false;
-      }, 20000)
-    } else if (waiting === false) {
+      }, letterCount*20)
+    }else if (line.length < letterCount){
+      waiting = true
+    }
+     else if (waiting === false) {
       target.innerHTML = line.substring(0, letterCount)
       letterCount += x;
     }
-  }, 120)
+  }, letterCount *25)
 }
 
 function  terminalText(lines, id, colors){
@@ -42,7 +45,7 @@ function  terminalText(lines, id, colors){
       id = generateUUID()
       const node = document.createElement("div")
       node.setAttribute("class","editor__line line")
-      const  lineNumber = document.createTextNode(y)
+      const  lineNumber = document.createTextNode(y+1)
       node.appendChild(lineNumber)
 
       const editorElement = document.createElement("span")
@@ -52,7 +55,7 @@ function  terminalText(lines, id, colors){
       node.appendChild(editorElement)
       target.appendChild(node)
       consoleText(lines[y], id, colors[y])
-    }, x*1000, x);
+    }, (x+1)*2000, x);
 }
 }
 
