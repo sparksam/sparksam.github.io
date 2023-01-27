@@ -144,7 +144,7 @@ body {
   font-size: 16px;
   color: #fff;
   line-height: 1.6;
-  background-color: #000;
+  background-color: #5517a6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -446,7 +446,6 @@ hr {
 
 .editor {
   width: 100%;
-  margin: 33px 0 34px 0;
   background-color: #2a2f34;
   border-radius: 5px;
   text-align: left;
@@ -494,6 +493,7 @@ hr {
 
 .editor .editor__element {
   color: #539eec;
+  margin-left: 1.2em;
 }
 
 .editor .editor__value {
@@ -621,4 +621,10 @@ hr {
   .donations .buttons .button {
     margin-right: 0;
   }
+}
+.console-underscore {
+  display:inline-block;
+ position:relative;
+ top:-0.14em;
+ left:10px;
 }
