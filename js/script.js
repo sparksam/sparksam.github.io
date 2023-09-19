@@ -1,13 +1,12 @@
 // function([string1, string2],target id,[color1,color2])
  terminalText(['Hello World 👋🏾, My name is Samuel Abatekoue Klutse,', 
- 'I am a software developer from Togo 🇹🇬, residing 📍 somewhere in the US  🇺🇸.', 
- 'I have a Bachelor\'s degree in Computer Science, a Master\'s in Software Engineering and currently pursuing a degree in Cyber Engineerring.',
+ 'I am a computer scientist from Togo 🇹🇬, currently pursuing my degrees in the US  🇺🇸.', 
+ 'I have a Bachelor\'s degree in Computer Science, a Master\'s in Software Engineering and currently pursuing a Master\'s degree in Cyber Engineerring.',
  'You might have noticed by now, I drink coffee and sometimes code.',
 'I also write some articles on Medium or try some Deep Learning algorithms with my friends.',
+'Recently I\'ve been working on personal project named Jarvis. Yes, Iron Man\'s Jarvis. So far... he can only speak. But I\'m working on it...',
 'Let\'s Connect:',
 'Github: @sparksam',
-'Twitter: @im_samk',
-'LinkedIn: @samuelklutse',
 'Email: klutse.samuel@gmail.com'], 'text',['orange','lightblue']);
 
 function consoleText(line, id, color) {
